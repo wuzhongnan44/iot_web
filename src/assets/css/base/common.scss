@@ -1,0 +1,238 @@
+/* vue-treeselect 区 */
+.vue-treeselect__control {
+   height: 28px !important;
+
+   .vue-treeselect__placeholder,
+   .vue-treeselect__single-value {
+      line-height: 26px;
+   }
+}
+
+.hide.vue-treeselect {
+   .vue-treeselect__multi-value {
+      margin-bottom: 0;
+   }
+
+   .vue-treeselect__multi-value-item-container {
+      padding-top: 0;
+      padding-right: 0;
+   }
+
+   .vue-treeselect__input-container {
+      display: none;
+   }
+}
+
+/*列表(左标题右内容)*/
+.g-lits {
+   font-size: 13px;
+
+   &::after {
+      content: '';
+      display: block;
+      visibility: hidden;
+      clear: both;
+      height: 0;
+   }
+
+   .g-lits-title {
+      vertical-align: middle;
+      float: left;
+      width: 115px;
+      padding: 5px 0;
+      text-align: right;
+      font-weight: bold;
+
+      .title-require {
+         color: $--color-danger;
+         position: relative;
+         top: 2px;
+         margin-right: 5px;
+      }
+   }
+
+   .g-lits-content {
+      padding: 5px 0;
+      color: #666;
+      page-break-after: left;
+      margin-left: 120px;
+      word-break: break-all;
+   }
+}
+
+/*弹出详情*/
+.g-detail-popup,
+.yvue-form {
+   position: relative;
+
+   .g-lits-title {
+      font-weight: normal;
+   }
+
+   .g-lits {
+      &:not(:last-child) {
+         margin-bottom: 8px;
+      }
+   }
+}
+
+/* 文字悬浮效果 */
+.t-hover {
+   cursor: pointer;
+   color: $--color-primary;
+
+   &:hover {
+      text-decoration: underline;
+      color: $--color-warning;
+   }
+}
+
+/* 文字高亮 */
+.t-hover-highlight:hover {
+   color: $--color-primary;
+}
+
+/* 提示 */
+.g-tip {
+   .g-tip-title {
+      color: $--gray-color;
+      padding: 1px 5px;
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      -ms-border-radius: 1px;
+      -o-border-radius: 1px;
+      border-radius: 1px;
+      background-color: #e8e8e8;
+      display: inline;
+      font-size: 12px;
+   }
+
+   .g-tip-content {
+      color: $--gray-color;
+      padding-left: 7px;
+      font-size: 12px;
+      display: inline;
+   }
+}
+
+/* 操作区 */
+.g-handle {
+   padding: 0 7px;
+
+   .g-handle-tip {
+      display: inline-block;
+      *display: inline;
+      height: 28px;
+      line-height: 28px;
+      margin-top: 10px;
+      margin-right: 5px;
+      float: left;
+      font-size: 12px;
+
+      &.gray {
+         color: $--gray-color;
+      }
+
+      &.red {
+         color: red;
+      }
+
+      &.primary {
+         color: $--color-primary;
+      }
+   }
+
+   .g-handle-item {
+      float: left;
+      margin-top: 10px;
+
+      &:not(:last-child) {
+         margin-right: 10px;
+      }
+   }
+
+   &:after {
+      content: '';
+      display: block;
+      visibility: hidden;
+      clear: both;
+      height: 0;
+   }
+
+   &.border {
+      border-bottom: 7px solid #e5e5e5;
+      line-height: 34px;
+   }
+}
+
+/*导航*/
+.g-tabs {
+   &::after {
+      content: '';
+      display: block;
+      visibility: hidden;
+      clear: both;
+      height: 0;
+   }
+
+   .g-tabs-item {
+      height: 28px;
+      line-height: 28px;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      border: 1px solid $--border-color-base;
+      cursor: pointer;
+
+      &:not(:first-child) {
+         border-left: 0;
+      }
+
+      &:first-child {
+         border-top-left-radius: 5px;
+         border-bottom-left-radius: 5px;
+      }
+
+      &:last-child {
+         border-top-right-radius: 5px;
+         border-bottom-right-radius: 5px;
+      }
+
+      &.active {
+         border: 1px solid $--color-primary;
+         color: $--color-primary;
+      }
+
+      &:hover {
+         color: $--color-primary;
+      }
+   }
+}
+
+
+/*隐藏elementUI的日期组件“确定”框*/
+.hide-datepicker-footer {
+   .el-picker-panel__footer, .el-time-panel__footer {
+      display: none !important;
+   }
+}
+
+/*隐藏时间选择按钮*/
+.g-date-picker-btn-none {
+   .el-picker-panel__footer,
+   .el-time-panel__footer {
+      display: none;
+   }
+}
+
+
+.yvue-form____fieldset-title{
+   color: $--color-primary;
+}
+
+
+.g-select-file{
+   background-color: $--color-primary !important;
+   color: #fff !important;
+   border-radius: 0 !important;
+}

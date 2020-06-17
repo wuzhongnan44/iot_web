@@ -1,0 +1,123 @@
+.yvue-crud {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+
+   &__header {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      border-bottom: 1px solid #e5e5e5;
+
+      .header-left {
+         align-self: center;
+         margin-bottom: 5px;
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+
+         .header-menu-title {
+            font-weight: bold;
+         }
+
+         .header-menu-tips {
+            color: red;
+            margin-left: 5px;
+         }
+      }
+
+      .header-right {
+         flex: 1;
+         display: flex;
+         justify-content: flex-end;
+         flex-wrap: wrap;
+
+         .header-menu-item {
+            margin-left: 7px;
+            margin-bottom: 5px;
+         }
+      }
+   }
+
+   &__search {
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .search-item {
+         margin-top: 7px;
+
+         &:not(:last-child) {
+            margin-right: 5px;
+         }
+      }
+
+   }
+
+   &__table{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .crud-table-header {
+         th {
+            background-color: #f8f8f9;
+            color: #1d1c1c;
+            line-height: unset;
+         }
+      }
+
+      .crud-table-cell {
+         padding-top: 7px;
+         padding-bottom: 7px;
+         font-size: 12px;
+
+         .el-button{
+            padding:5px;
+         }
+      }
+   }
+
+   &__page{
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 10px 10px;
+   }
+}
+
+.yvue-crud-dialog-excel {
+   .el-form-item__label {
+      line-height: 28px;
+   }
+
+   .el-input-group {
+      width: 100%;
+
+      &__append {
+         background-color: #5c615a;
+         color: #fff;
+      }
+   }
+
+   .g-tip {
+      margin-bottom: 10px;
+   }
+
+   .download {
+      color: orange;
+      cursor: pointer;
+      font-size: 12px;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}

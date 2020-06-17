@@ -1,0 +1,45 @@
+@mixin ellipsis() {
+   overflow: hidden;
+   -ms-text-overflow: ellipsis;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+@mixin ellipsis-mp($num:2) {
+   display: -webkit-box;
+   -webkit-line-clamp: $num;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+@mixin user-select($value:none) {
+   -webkit-user-select: $value;
+   -moz-user-select: $value;
+   -ms-user-select: $value;
+   user-select: $value;
+}
+
+@mixin scrollbar() {
+   //滚动条整体的样式
+   &::-webkit-scrollbar {
+      background-color: transparent;
+      width: 4px;
+      height: 8px;
+   }
+
+   //滑块部分
+   &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: #7a7a8c;
+      width: 4px;
+      height: 4px;
+   }
+
+   // 轨道部分
+   &::-webkit-scrollbar-track {
+      width: 4px;
+      height: 4px;
+      background: transparent;
+   }
+}

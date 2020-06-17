@@ -1,0 +1,43 @@
+.yvue-form {
+   &__fieldset {
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-top: 5px;
+      border: 1px solid silver;
+
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__fieldset-title {
+      font-weight: 700;
+      font-size: 14px;
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   &__fieldset-content {
+
+   }
+
+   &__footer {
+      border-top: 1px solid #e5e5e5;
+      padding-top: 15px;
+      margin-right: -15px;
+      margin-left: -15px;
+      margin-top: 20px;
+
+      &.center {
+         text-align: center;
+      }
+
+      &.left {
+         text-align: left;
+      }
+
+      &.right {
+         text-align: right;
+      }
+   }
+}
